@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vb;
+        }
+        div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+       
+        text-align: right;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+
+<body>
+    <form action="{% url 'details' %}" style="text-align: center;" method="post">
+        {% csrf_token %}
+
+
+        <h1 style="color: rgb(242, 160, 9);">STUDENT DETAILS</h1>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Student Name</label>
+        <input type="text" name="s_name">
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Address</Address></label>
+        <textarea name="add" id=""></textarea>
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Age</label>
+        <input type="text" name="age">
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Email</label>
+        <input type="text" name="email">
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Joining Date</label>
+        <input type="date" name="jd">
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Gender</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gen" value="m">
+        <label for="female">Female</label>
+        <input type="radio" name="gen" value="f">
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Qualification</label>
+        <select name="quali" id="">
+            <option value="Degree">Degree</option>
+            <option value="postgraduation">postgraduation</option>
+            <option value="Diploma">Diploma</option>
+            <option value="12th">12th</option>
+            <option value="SSLC">SSLC</option>
+        </select>
+    </div>
+        <br><br>
+        <div>
+        <label for="" style="background-color: rgb(238, 82, 9);">Mobile NO</label>
+        <input type="text" name="mob">
+    </div>
+
+        <br><br>
+
+        <button type="submit" style="background-color: rgb(227, 235, 12);">Submit</button>
+    </form>
+
+</body>
+
+</html>

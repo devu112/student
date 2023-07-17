@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="card" style="width:400px">
+            <div class="card-body" style="background-color: rgb(193, 27, 27)">
+
+
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="card-title">
+                                <center>{{a.student_name}}</center>
+                            </h5>
+                        </td>
+                    </tr>
+            </div>
+            </center>
+            <tr>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    <td><label>Address:</td>
+                    <td></label>{{a.address}}</td>
+                </h6>
+            <tr>
+                <p class="card-text">
+                    <td><label>Age:</label></td>
+                    <td>{{a.age}}</td>
+                </p>
+            </tr>
+            <tr>
+                <p class="card-text"><label>
+                        <td>Email Address:</td>
+                        <td>
+                    </label>{{a.email}}</td>
+                </p>
+            </tr>
+            <tr>
+                <p class="card-text">
+                    <td><label>Joining Date:</label></td>
+                    <td>{{a.joiningdate}}</td>
+                </p>
+            </tr>
+            <tr>
+                <p class="card-text">
+                    <td><label>Gender:</label></td>
+                    <td>{{a.gender}}</td>
+                </p>
+            </tr>
+            <tr>
+                <p class="card-text">
+                    <td><label>Qualification:</label></td>
+                    <td>{{a.qualifiation}}</td>
+                </p>
+            </tr>
+            <tr>
+                <p class="card-text">
+                    <td><label>Contact Number: </label></td>
+                    <td>{{a.mobileno}}</td>
+                </p>
+            </tr>
+            <tr>
+                <td><a href="{% url 'show' %}" class="card-link">GO BACK</a></td>
+                <td></td>
+            </tr>
+        </div>
+    </div>
+</body>
+
+</html>
